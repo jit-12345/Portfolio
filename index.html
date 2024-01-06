@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="128x128" href="developer.png" />
+    <title>Jit - Developer Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(0, 0, 36);
+        color: whitesmoke;
+        font-family: "Poppins", sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(1, 1, 71);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: rgb(145, 145, 242);
+        font-size: 1.02rem;
+      }
+      main hr {
+        border: 0;
+        background: #9c97f1;
+        height: 1.2px;
+        margin: 40px 84px;
+      }
+      .left img {
+        margin-left: 10%;
+        font-size: 2rem;
+        width: 10%;
+      }
+      .firstsection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 14vh 0;
+      }
+      .firstsection > div {
+        width: 30%;
+      }
+      .leftsection {
+        font-size: 2rem;
+      }
+      .leftsection .btn {
+        padding: 12px;
+        color: white;
+        background-color: #5e5ec9fa;
+        border-radius: 6px;
+        border: 2px solid white;
+        cursor: pointer;
+        
+      }
+      .btn > a{
+        text-decoration: none;
+        color: white;
+      }
+      .leftsection .button{
+        padding: 30px 50px;
+      }
+      .rightsection img {
+        width: 80%;
+      }
+      .purple {
+        color: rgb(193, 139, 244);
+      }
+      .text-gray {
+        color: gray;
+      }
+      #element {
+        color: rgb(193, 139, 244);
+        font-size: 2.5rem;
+      }
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+      }
+      .secondSection h1 {
+        font-size: 1.9rem;
+      }
+      .secondSection .box {
+        background: white;
+        width: 80vw;
+        height: 2px;
+        margin: 54px 0;
+        display: flex;
+        /* justify-content: space-between; */
+      }
+      .secondSection .vertical {
+        background: white;
+        height: 71px;
+        width: 1px;
+        margin: 0 100px;
+      }
+      .image-top {
+        width: 39px;
+        position: relative;
+        top: -40px;
+        left: -13px;
+      }
+      .vertical-title {
+        position: relative;
+        top: 29px;
+        width: 145px;
+      }
+      .vertical-desc {
+        width: 150px;
+        position: relative;
+        top: 34px;
+        color: gray;
+        font-size: 9px;
+      }
+      footer .contect_details {
+        color: grey;
+        position: relative;
+        padding: 43px;
+      }
+      .secondrow {
+        display: flex;
+        justify-content: space-around;
+        margin-left: 80px;
+        padding: 0 225px;
+      }
+      .firstimg,
+      .secondimg,
+      .thirdimg {
+        margin: 10px; /* Adjust the margin as needed */
+      }
+      .secondrow img {
+        width: 50px;
+        height: auto;
+        border-radius: 50%;
+      }
+      .last {
+        background-color: rgb(1, 1, 71);
+      }
+      .thirdrow {
+        background-color: gray;
+        height: 40px;
+        text-align: center;
+      }
+      .reserved {
+        font-weight: bold;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left"><img src="logo.png" alt="" /></div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstsection">
+        <div class="leftsection">
+          <div>
+            Hi! My name is
+            <span class="purple" style="font-size: 2.5rem">Jit</span>
+          </div>
+          <div>and i am a pssionate</div>
+
+          <span id="element"></span>
+          <div class="button">
+            <button class="btn" onclick="downloadPDF()">Download Resume</button>
+            <button class="btn"> <a href="https://github.com/jit-12345">Visit GitHub</a></button>
+          </div>
+        </div>
+        <div class="rightsection">
+          <img src="bg.png" alt="" />
+        </div>
+      </section>
+      <hr />
+      <section class="secondSection">
+        <span class="text-gray">What I hava done so far</span>
+        <h1>Work Experience</h1>
+
+        <div class="box">
+          <div class="vertical">
+            <img src="developer.png" alt="" class="image-top" />
+            <div class="vertical-title">HTML Developer (2021-2022)</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae id
+              nostrum nam a, laborum illum inventore alias natus tempora iure.
+            </div>
+          </div>
+          <div class="vertical">
+            <img src="developer.png" alt="" class="image-top" />
+            <div class="vertical-title" style="width: 209px">
+              FRONTEND Developer (2021-2022)
+            </div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae id
+              nostrum nam a, laborum illum inventore alias natus tempora iure.
+            </div>
+          </div>
+          <div class="vertical">
+            <img src="developer.png" alt="" class="image-top" />
+            <div class="vertical-title">NODE.js Developer (2022-2023)</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae id
+              nostrum nam a, laborum illum inventore alias natus tempora iure.
+            </div>
+          </div>
+          <div class="vertical">
+            <img src="developer.png" alt="" class="image-top" />
+            <div class="vertical-title">JAVA Developer (2022-2023)</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae id
+              nostrum nam a, laborum illum inventore alias natus tempora iure.
+            </div>
+          </div>
+          <div class="vertical">
+            <img src="developer.png" alt="" class="image-top" />
+            <div class="vertical-title" style="width: 209px">
+              BACKEND Developer (2022-2023)
+            </div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae id
+              nostrum nam a, laborum illum inventore alias natus tempora iure.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="last">
+      <div class="firstrow">
+        <span class="contect_details">Connect With Me -</span>
+      </div>
+      <div class="secondrow">
+        <div class="firstimg">
+          <a href="https://www.linkedin.com/in/jit-chakraborty-15a784247/">
+            <img src="linkedin.png" alt="linkedin"
+          /></a>
+        </div>
+        <div class="secondimg">
+          <a href=""><img src="facebook.png" alt="" /></a>
+        </div>
+        <div class="thirdimg">
+          <a href="">
+            <img src="instagram.png" alt="" />
+          </a>
+        </div>
+      </div>
+      <div class="thirdrow">
+        <p>
+          &copy; 2024 www.jitsportfolio.com |
+          <span class="reserved">ALL RIGHTS RESERVED</span>
+        </p>
+      </div>
+    </footer>
+
+    <!-- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["WEB DEVELOPER", "JAVA DEVELOPER","CRITICAL THINKER"],
+        typeSpeed: 50,
+      });
+    
+    </script> -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["WEB DEVELOPER", "JAVA DEVELOPER", "CRITICAL THINKER"],
+        typeSpeed: 50,
+        loop: true, // Set loop to true for infinite loop
+      });
+    </script>
+    <script>
+      function downloadPDF() {
+        // Replace 'path/to/your/file.pdf' with the actual path to your PDF file
+        var pdfPath = 'Copy of Jit_Chak_resume.pdf';
+      
+        // Create a link element
+        var link = document.createElement('a');
+      
+        // Set the href attribute to the PDF file path
+        link.href = pdfPath;
+      
+        // Set the download attribute to specify the filename users will see
+        link.download = 'JitsResume.pdf';
+      
+        // Append the link to the document
+        document.body.appendChild(link);
+      
+        // Trigger a click event on the link to start the download
+        link.click();
+      
+        // Remove the link from the document after the download is complete
+        document.body.removeChild(link);
+      }
+      </script>
+  </body>
+</html>
+<!-- 25.51 -->
+<!-- 45.51 -->
