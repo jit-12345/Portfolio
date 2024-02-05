@@ -26,8 +26,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 80px;
+        height: 6vw;
+        width: 100vw;
         background-color: rgb(1, 1, 71);
+        box-sizing: border-box;
       }
       nav ul {
         display: flex;
@@ -61,6 +63,9 @@
         justify-content: space-around;
         align-items: center;
         margin: 14vh 0;
+        height: 50vh;
+        width: 100vw;
+        box-sizing: border-box;
       }
       .firstsection > div {
         width: 30%;
@@ -75,17 +80,17 @@
         border-radius: 6px;
         border: 2px solid white;
         cursor: pointer;
-        
       }
-      .btn > a{
+      .btn > a {
         text-decoration: none;
         color: white;
       }
-      .leftsection .button{
+      .leftsection .button {
         padding: 30px 50px;
       }
+      
       .rightsection img {
-        width: 80%;
+        width: 100%;
       }
       .purple {
         color: rgb(193, 139, 244);
@@ -199,7 +204,9 @@
           <span id="element"></span>
           <div class="button">
             <button class="btn" onclick="downloadPDF()">Download Resume</button>
-            <button class="btn"> <a href="https://github.com/jit-12345">Visit GitHub</a></button>
+            <button class="btn">
+              <a href="https://github.com/jit-12345">Visit GitHub</a>
+            </button>
           </div>
         </div>
         <div class="rightsection">
@@ -304,27 +311,27 @@
     <script>
       function downloadPDF() {
         // Replace 'path/to/your/file.pdf' with the actual path to your PDF file
-        var pdfPath = 'Copy of Jit_Chak_resume.pdf';
-      
+        var pdfPath = "Copy of Jit_Chak_resume.pdf";
+
         // Create a link element
-        var link = document.createElement('a');
-      
+        var link = document.createElement("a");
+
         // Set the href attribute to the PDF file path
         link.href = pdfPath;
-      
+
         // Set the download attribute to specify the filename users will see
-        link.download = 'JitsResume.pdf';
-      
+        link.download = "JitsResume.pdf";
+
         // Append the link to the document
         document.body.appendChild(link);
-      
+
         // Trigger a click event on the link to start the download
         link.click();
-      
+
         // Remove the link from the document after the download is complete
         document.body.removeChild(link);
       }
-      </script>
+    </script>
   </body>
 </html>
 <!-- 25.51 -->
